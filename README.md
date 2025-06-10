@@ -26,6 +26,7 @@ Este projeto implementa uma cifra de blocos **simétrica** de 32 bits com **3 ro
 
 ### ▶️ Passo a passo
 
+
 # 1. Clone o repositório
 git clone https://github.com/seu-usuario/cifra-blocos.git
 cd cifra-blocos
@@ -33,18 +34,42 @@ cd cifra-blocos
 # 2. Execute o programa
 python cifra_de_blocos.py
 
-📌 No terminal, escolha:
-  1 para criptografar
-  2 para decriptografar
 
-📝 Informe:
-Arquivo de entrada (ex: mensagem.txt)
-Arquivo de saída (ex: mensagem.cript)
-Chave de 32 bits em hexadecimal (ex: 1A2B3C4D)
+### 📌 No terminal, escolha:
 
-🧪 Teste do Efeito Avalanche
+* `1` para **criptografar**
+* `2` para **decriptografar**
+
+### 📝 Informe:
+
+* Arquivo de entrada (ex: `mensagem.txt`)
+* Arquivo de saída (ex: `mensagem.cript`)
+* Chave de 32 bits em hexadecimal (ex: `1A2B3C4D`)
+
+---
+
+## 🧪 Teste do Efeito Avalanche
+
 Rode o script de teste para observar o comportamento do efeito avalanche:
+
+```bash
 python teste_avalanche.py
-Obs: O teste compara os resultados da cifra usando duas chaves que diferem por 1 bit.
+```
 
+O teste compara os resultados da cifra usando duas chaves que diferem por **1 bit**.
 
+---
+
+## 📁 Estrutura dos Arquivos
+
+| Arquivo                      | Função                                    |
+| ---------------------------- | ----------------------------------------- |
+| `cifra_de_blocos.py`         | Código principal da cifra                 |
+| `teste_avalanche.py`         | Script de verificação do efeito avalanche |
+| `mensagem.txt`               | Exemplo de arquivo de entrada             |
+| `mensagem_criptografada.bin` | Arquivo cifrado gerado pelo algoritmo     |
+| `mensagem_final.txt`         | Resultado da descriptografia              |
+
+---
+
+> Projeto desenvolvido para a disciplina **Segurança de Sistemas e Criptografia**.
